@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="botao-voltar"> Início</a>
+        <h1>Lista de Produtos</h1>
+    </header>
+    <main class="container">
+        <div id="tabela-box">
+            <table id="tabela-produtos">
+                <thead>
+                    <tr>
+                        <th>Produtos</th>
+                        <th>Preço</th>
+                        <th>Categorias</th>
+                        <th>Origem</th>
+                        <th>Lote</th>
+                        <th>Data de Validade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela-produtos">
+
+                </tbody>
+            </table> 
+            <p id="lista-vazia-msg" style="display: none; text-align: center; margin: 20px;"> Nenhum produto cadastrado. 
+                Utilize o botão "Cadastrar Novo Produto" para adicionar um iten.
+            </p>
+        </div>
+
+    </main>
+
+    <a href="cadastro.html" class="botao-adicionar"> Cadastrar Novo Produto</a>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

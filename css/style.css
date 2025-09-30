@@ -1,0 +1,146 @@
+body {
+    font-family: arial,sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #394263;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.botao-menu {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 25px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width:80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.botao-cadastrar {background-color: #28a745;}
+.botao-cadastrar:hover { background-color: #19b93c;}
+
+.botao-listar {background-color: #007bff;}
+.botao-listar:hover {background-color: #0056b3;}
+
+#formulario-produto label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#formulario-produto input, #formulario-produto select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#botao-salvar {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.1em;
+    width: 100%;
+    
+}
+#botao-salvar:hover { background-color: #0056b3;}
+
+#tabela-produtos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabela-produtos td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+#tabela-produtos th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+
+}
+
+#tabela-produtos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.botao-editar, .botao-excluir {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 0.85em;
+    
+}
+
+.botao-editar {background-color: #d1b86d; color: #333;}
+.botao-editar:hover {opacity: 0.8;}
+
+.botao-excluir {background-color: #dc3534; color: white;}
+.botao-excluir:hover {opacity: 0.8;}
+
+
+.botao-adicionar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    text-decoration: none;
+    background-color: #17a2b8;
+    color: white;
+    padding: 12px 18px;
+    border-radius:  50px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.botao-adicionar:hover {background-color: #138496;}
+
+.botao-voltar {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translatey(-50%);
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border: 2px 4px;
+    border-color: #607fa0;
+    border-radius: 5px;
+}
