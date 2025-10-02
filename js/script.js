@@ -70,7 +70,7 @@ if (document.getElementById('formulario-produto')) {
             }
         } else {
             
-            dadosProduto.id = Date.now(); // Gera um ID único
+            dadosProduto.id = Date.now(); 
             produtos.push(dadosProduto);
         }
 
@@ -104,18 +104,19 @@ function renderizarLista() {
         const tr = document.createElement('tr');
         const precoFormatado = 'R$ ' + produto.preco.toFixed(2).replace('.', ',');
 
-        
-        tr.innerHTML = `
+            tr.innerHTML = `
             <td>${produto.nome}</td>
             <td>${precoFormatado}</td>
             <td>${produto.categoria}</td>
+            <td>${produto.origem}</td>    
             <td>${produto.lote}</td>
             <td>${produto.validade}</td>
             <td>
                 <button class="botao-editar" data-id="${produto.id}">Editar</button>
                 <button class="botao-excluir" data-id="${produto.id}">Excluir</button>
             </td>
-        `;
+`;
+
         corpoTabela.appendChild(tr);
     });
 
